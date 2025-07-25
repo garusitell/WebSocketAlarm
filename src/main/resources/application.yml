@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: demo
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/websockets
+    username: root
+    password: yesh@25164
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  batch:
+    jdbc:
+      initialize-schema: ALWAYS
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    properties:
+      hibernate:
+        format_sql: true
+        use_sql_comments: true
+        highlight_sql: true
+        hbm2ddl.auto: update
+    open-in-view: true
+    show-sql: true
+    jdbc:
+      time_zone: Asia/Seoul
+
